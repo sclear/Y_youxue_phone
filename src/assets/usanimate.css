@@ -1,0 +1,25 @@
+.shades-enter-active {
+    animation: showIn 5s linear forwards;
+  }
+.shades-leave-active{
+    animation: showOut .3s linear forwards;
+
+}
+
+/* 进入 */
+@keyframes showIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes showOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

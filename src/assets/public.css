@@ -1,0 +1,63 @@
+.mt7{
+    margin-top: .4375rem;
+}
+.mt28{
+    margin-top: 1.75rem;
+}
+
+.fs11{
+    font-size: .6875rem;
+}
+
+
+
+
+.fade-enter-active {
+    animation: guodu .3s linear forwards;
+  }
+  .fade-leave-active{
+    animation: guodus .3s linear forwards;
+
+  }
+.fd-enter-active {
+    animation: opac .3s linear forwards;
+  }
+  .fd-leave-active {
+    animation: opacs .3s linear forwards;
+  }
+
+  @keyframes guodu {
+      0%{
+          margin-top: 400px;
+      }
+      100%{
+          margin-top: 0;
+      }
+  }
+
+  @keyframes guodus {
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 400px;
+    }
+}
+
+
+@keyframes opac {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes opacs {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

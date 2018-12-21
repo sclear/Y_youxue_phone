@@ -42,10 +42,12 @@ export default {
         height:1.6875rem;
         input{
             height:27px !important;
-            width:203px;
+            width:103px;
             box-sizing: border-box;
-            // border:1px solid @bgcol;
+            border:none;
+            background: red;
             // border-right:1px solid black;
+            display: inline-block;
             outline: none;
         }
         div{

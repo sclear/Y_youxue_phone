@@ -1,6 +1,6 @@
 <template>
   <div class="backtitle">
-      精品课件
+      {{text}}
       <div><</div>
   </div>
 </template>
@@ -11,6 +11,12 @@ export default {
     return {
 
     }
+  },
+  props:{
+      text:{
+          type:String,
+          required:true
+      }
   },
   components: {
 

@@ -1,6 +1,6 @@
 <template>
   <div class="good">
-    <back></back>
+    <back text='精品课件'></back>
     <div class="logo"></div>
     <div class="sale"></div>
     <like-hr></like-hr>

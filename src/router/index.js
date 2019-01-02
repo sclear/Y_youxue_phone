@@ -29,5 +29,35 @@ export default new Router({
       name: 'good',
       component: resolve => require(['@/components/good/good.vue'],resolve)
     },
+    {
+      title: '个人中心',
+      path: '/center',
+      name: 'center',
+      component: resolve => require(['@/components/center/center.vue'],resolve)
+    },
+    {
+      title: '测评',
+      path: '/evals',
+      name: 'evals',
+      component: resolve => require(['@/components/center/children/evals.vue'],resolve)
+    },
+    {
+      title: '课程管理',
+      path: '/course',
+      name: 'course',
+      component: resolve => require(['@/components/course/course.vue'],resolve)
+    },
+    {
+      title: '订单',
+      path: '/order',
+      name: 'order',
+      component: resolve => require(['@/components/order/order.vue'],resolve)
+    },
+    {
+      title: '收藏',
+      path: '/collect',
+      name: 'collect',
+      component: resolve => require(['@/components/collect/collect.vue'],resolve)
+    },
   ]
 })

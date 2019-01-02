@@ -3,7 +3,6 @@
   }
 .shades-leave-active{
     animation: showOut .3s linear forwards;
-
 }
 
 /* 进入 */
@@ -22,4 +21,50 @@
     100%{
         opacity: 0;
     }
+}
+
+/* 遮罩 */
+.modeshade-enter{
+    opacity: 0;
+}
+.modeshade-enter-active{
+    transition: all .5s linear;
+}
+.modeshade-enter-to{
+    opacity: 1;
+}
+
+.modeshade-leave{
+    opacity: 1;
+}
+.modeshade-leave-active{
+    transition: all .5s linear;
+}
+.modeshade-leave-to{
+    opacity: 0;
+}
+
+/* model 下落 */ 
+.tras-enter{
+    opacity: 0;
+    transform: translateY(-30px)
+}
+.tras-enter-active{
+    transition: all .5s linear;
+}
+.tras-enter-to{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tras-leave{
+    transform: translateY(0);
+    opacity: 1;
+}
+.tras-leave-active{
+    transition: all .5s linear;
+}
+.tras-leave-to{
+    transform: translateY(-30px);
+    opacity: 0;
 }

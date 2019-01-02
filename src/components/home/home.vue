@@ -22,8 +22,8 @@
     <!-- 时间排序分类 -->
     <timeclass></timeclass>
 
-    <!-- 测评model -->
-    <test></test>
+    <!-- 测评model   !-->
+    <test v-if="test"></test>
   </div>
 </template>
 
@@ -31,6 +31,7 @@
 export default {
   data() {
     return {
+      test:true
     };
   },
   components: {

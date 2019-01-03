@@ -1,10 +1,10 @@
 <template>
   <div class="classify">
-    <div class="title">一年级</div>
+    <back :text='title'></back>
     <div class="hr"></div>
-    <div class="menu">
+    <!-- <div class="menu">
       <div @click="choses(index)" v-for="(item,index) in list" :key="index" class="corse" :class="choseIndex===index?'chose':''">{{item}}</div>
-    </div>
+    </div> -->
     <hr>
     <div class="group">
         <div class="detail">
@@ -57,17 +57,31 @@
 </template>
 
 <script>
+import _api from './../../api/api.js'
 export default {
+  mounted () {
+      this.title = this.$route.query.title
+    console.log(this.$route.query.id) 
+    this.getInfo() 
+  },
   data() {
     return {
         list:['英语','英语','英语','英语','英语','英语','英语'],
-        choseIndex:0
+        choseIndex:0,
+        title:''
     };
   },
   methods: {
     choses(res) {
         this.choseIndex = res;
-    }  
+    },
+    getInfo() {
+        _api.getLists({
+            list_id:this.$route.query.id
+        }).then(res=>{
+            console.log(res)
+        })
+    }
   },
   components: {}
 };

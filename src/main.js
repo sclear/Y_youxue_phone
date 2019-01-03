@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+import 'swiper/dist/css/swiper.min.css';
 import './assets/public.css'  //公用css
 import './assets/usanimate.css'   //css3 animate
 import _globalComponents from './components/global/index' //全局组件

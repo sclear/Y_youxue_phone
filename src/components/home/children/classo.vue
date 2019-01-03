@@ -1,10 +1,10 @@
 <template>
   <div class="classo">
-      <div>
+      <div @click="toRoute(0)">
           <span></span>
           <span>课程分类</span>
       </div>
-      <div>
+      <div  @click="toRoute(1)">
           <span></span>
           <span>精选课件</span>
       </div>
@@ -26,8 +26,14 @@ export default {
 
     }
   },
-  components: {
+  methods: {
+      toRoute(res) {
+          switch(res) {
+              case 0: this.$router.push('/classmain'); break;
+              case 1: this.$router.push('/good'); break;
 
+          }
+      }
   }
 }
 </script>

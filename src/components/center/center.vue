@@ -9,23 +9,23 @@
       <div class="user">5646548656</div>
     </div>
     <like-hr class=""></like-hr>
-    <div @click="toRoute(0)" class="menu">
-        <div class="menu-child">
+    <div class="menu">
+        <div @click.stop="toRoute(0)" class="menu-child">
             <span>icon</span> <span>测评</span>
         </div>
     </div>
-    <div @click="toRoute(1)" class="menu">
-        <div class="menu-child">
+    <div class="menu">
+        <div @click.stop="toRoute(1)" class="menu-child">
             <span>icon</span> <span>课程管理</span>
         </div>
     </div>
-    <div  @click="toRoute(2)" class="menu">
-        <div class="menu-child">
+    <div  class="menu">
+        <div @click.stop="toRoute(2)" class="menu-child">
             <span>icon</span> <span>订单管理</span>
         </div>
     </div>
-    <div  @click="toRoute(3)" class="menu">
-        <div class="menu-child">
+    <div  class="menu">
+        <div @click.stop="toRoute(3)" class="menu-child">
             <span>icon</span> <span>我的收藏</span>
         </div>
     </div>
@@ -39,11 +39,13 @@ export default {
   },
   methods: {
       toRoute(res) {
+        //   console.log(res)
+        //   return
           switch(res) {
-              case 0:this.$router.push('evals');break;
-              case 1:this.$router.push('course');break;
-              case 2:this.$router.push('order');break;
-              case 3:this.$router.push('collect');break;
+              case 0:this.$router.push('/evals');break;
+              case 1:this.$router.push('/course');break;
+              case 2:this.$router.push('/order');break;
+              case 3:this.$router.push('/collect');break;
           }
           
       }

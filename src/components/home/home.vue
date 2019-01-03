@@ -2,7 +2,9 @@
   <div class="home">
     <!-- <serch></serch> -->
     <!-- 轮播 -->
-    <swipers></swipers>
+    <swipers>
+      
+    </swipers>
 
     <!-- 课程分类 -->
     <classo></classo>
@@ -31,7 +33,7 @@
 export default {
   data() {
     return {
-      test:true
+      test:false
     };
   },
   components: {
